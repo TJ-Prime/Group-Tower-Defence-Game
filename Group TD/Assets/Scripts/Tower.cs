@@ -15,6 +15,7 @@ public class Tower : MonoBehaviour
     {
         float RangeSize = (Range * 2) + 1;
         GetComponent<CapsuleCollider>().radius = RangeSize / 2;
+        GetComponent<CapsuleCollider>().height = RangeSize + 0.5f;
         transform.Find("Range").transform.localScale = new Vector3(RangeSize, RangeSize, 1);
     }
 
